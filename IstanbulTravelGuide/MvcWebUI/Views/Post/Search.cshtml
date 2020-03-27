@@ -1,0 +1,40 @@
+﻿@*@model List<Entities.Dtos.PostDetailDto>*@
+@model List<Entities.Concrete.Post>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+
+<br/>
+
+<div class="row mb-2">
+    
+    @foreach (var post in Model)
+    {
+    <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">@post.UserName</strong>
+                <h3 class="mb-0"> @post.Header</h3>
+                <div class="mb-1 text-muted"> @post.Date.ToString("D")  </div>
+                <p class="card-text mb-auto">@post.Description</p>
+                <a asp-controller="Post" asp-action="Detail" asp-route-postId="@post.Id">
+                    <button type="button" class="btn btn-link">Continue reading</button>
+                </a>
+
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <img class="bd-placeholder-img img-fluid" width="200" height="250" preserveAspectRatio="xMidYMid slice" focusable="false" src="@post.PhotoUrl" />
+
+                @*   <svg  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>*@
+            </div>
+        </div>
+    </div>
+    
+    }
+</div>

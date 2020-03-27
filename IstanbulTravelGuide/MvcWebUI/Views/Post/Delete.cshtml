@@ -1,0 +1,57 @@
+﻿@model Entities.Concrete.Post
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@*<div class="card">
+    <div class="card-header"><h4 class="display-4">@Model.Header</h4></div>
+    <div class="card-body">
+        <p> <b> @Model.Description</b></p>
+        <p>@Model.Text</p>
+
+    </div>
+    <div class="card-footer">Posted by  at @Model.Date</div>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Sil" class="btn btn-danger" /> |
+        <a href="/Post/Index" ><button type="button" class="btn btn-outline-dark">Listeye Dön</button></a>
+    </div>
+}*@
+
+<div class="col-md-12 blog-main">
+
+
+    <div class="blog-post">
+       
+
+        <h2 class="blog-post-title"> @Model.Header</h2>
+          
+       
+        <p class="blog-post-meta"> @Model.Date.ToString("D") by <a href="#">@Model.UserName</a></p>
+        <div class="row">
+            <p class=" col-md-10">@Model.Description</p>
+        </div>
+        <p>@Model.Text</p>
+
+    </div>
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Sil" class="btn btn-danger" /> |
+            <a href="/Post/Index" ><button type="button" class="btn btn-outline-dark">Listeye Dön</button></a>
+        </div>
+    }
+
+
+</div>

@@ -1,0 +1,40 @@
+﻿@model  CommentListViewModel
+
+
+
+@foreach (var comment in Model.Comments)
+{
+    <div class="be-img-comment">
+        <a href="blog-detail-2.html">
+            <img src="https://png.pngtree.com/png-vector/20191021/ourlarge/pngtree-user-vector-icon-with-transparent-background-png-image_1836030.jpg" alt="" class="be-ava-comment">
+        </a>
+    </div>
+    <div class="be-comment-content">
+
+
+
+
+
+
+
+
+
+        <span class="be-comment-name">
+            <a href="blog-detail-2.html">@comment.UserName</a>
+        </span>
+        <span class="be-comment-time">
+            <i class="fa fa-clock-o"></i>
+            @comment.Email - 
+            @comment.Date.ToString("D")
+        </span>
+        <p class="be-comment-text">
+            @comment.Text
+
+        </p>
+   
+
+    </div>
+}
+    
+    
+ 

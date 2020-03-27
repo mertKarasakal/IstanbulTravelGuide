@@ -1,0 +1,85 @@
+﻿@model Entities.Concrete.Comment
+
+
+<div id="add-comment-block" class="container-wrapper">
+
+
+    <div id="respond" class="comment-respond">
+        <h3 id="reply-title" class="comment-reply-title the-global-title has-block-head-4">
+            Bir cevap yazın <small>
+                <a rel="nofollow" id="cancel-comment-reply-link" href="#respond" style="display: none;">Cevabı iptal et</a>
+            </small>
+        </h3>
+        <form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate="">
+            <p class="comment-notes">
+                <span id="email-notes">E-posta hesabınız yayımlanmayacak.</span>
+                Gerekli alanlar
+                <span class="required">*</span> ile işaretlenmişlerdir
+            </p>
+            <p class="comment-form-comment"><label for="comment">Yorum</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+            <p class="comment-form-author"><label for="author">İsim <span class="required">*</span></label> <input id="author" name="author" type="text" size="30" maxlength="245" required="required"></p>
+            <p class="comment-form-email"><label for="email">E-posta <span class="required">*</span></label> <input id="email" name="email" type="email" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+            <p class="comment-form-url"><label for="url">İnternet sitesi</label> <input id="url" name="url" type="url" size="30" maxlength="200"></p>
+            <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Yorum gönder"> <input type="hidden" name="comment_post_ID" value="2117" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0"> </p>
+            <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="74a3cc6871"></p>
+            <p style="display: none;"></p><input type="hidden" id="ak_js" name="ak_js" value="1585236865600">
+        </form>
+    </div>
+</div>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <!-- /.card-body -->
+    <!-- Input addon -->
+    <div class="card card-success">
+
+        <div class="card-body">
+
+           
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <label> yorumunuz </label>
+                </div>
+                <div class="col-sm-6">
+
+                    <div class="input-group mb-3">
+                        @Html.EditorFor(model => model.Text, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Text, "", new { @class = "text-danger" })
+
+                    </div>
+                </div>
+            </div>
+
+
+        
+
+
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Ekle" class="btn btn-success" />
+                </div>
+            </div>
+
+
+            <!-- /input-group -->
+        </div>
+        <!-- /.card-body -->
+    </div>
+
+
+
+
+}
+
+
+

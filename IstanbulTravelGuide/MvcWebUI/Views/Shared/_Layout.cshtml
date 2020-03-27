@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MvcWebUI</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/blog.css" rel="stylesheet" />
+</head>
+
+
+
+<body>
+<div class="container">
+    <header class="blog-header py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-3 pt-1">
+
+                <a class="text-muted" href="/Photo/Index">Gallery</a>
+            </div>
+            <div class="col-6 text-center">
+                <a class="blog-header-logo text-dark" href="/Post">Istanbul Travel Guide</a>
+            </div>
+            <div class="col-3 d-flex justify-content-end align-items-center">
+                  
+                @using (Html.BeginForm("Search", "Post", FormMethod.Get))
+                {
+                    <div class="form-inline  my-2 my-lg-0">
+
+                        <p>@*@Html.Editor("arat")*@</p>
+                        <input type="text" name="key" class="form-control form-control-sm mr-sm-2" />
+                        @*<a class="text-muted" href="#" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false">
+                            <title>Search</title>
+                            <circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/>
+                        </svg>
+                    </a>*@
+                        <input type="submit" class="btn btn-outline-dark btn-sm my-2 my-sm-0" value="Ara" />
+                        @*<a class="btn btn-sm btn-danger" asp-controller="Post" asp-action="Search" asp-route-key=aas>aral</a>*@
+                    </div>
+
+                }
+                @*<input type="text" />
+                    <a class="text-muted" href="#" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5" /><path d="M21 21l-5.2-5.2" /></svg>
+                    </a>*@
+                @*<a class="btn btn-sm btn-outline-secondary" href="/Post/Create">New Post</a>*@
+                  
+                      
+            </div>
+
+               
+
+        </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-between">
+
+            @await Component.InvokeAsync("CategoryList")
+
+      
+        </nav>
+    </div>
+</div>
+
+<main role="main" class="container">
+    <div class="row">
+        <div class=" blog-main col-md-12">
+               
+
+            @RenderBody()
+
+        </div><!-- /.blog-main -->
+
+        
+
+    </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+    
+<footer class="footer ">
+    <div class="container">
+        <span class="text-muted">&copy; 2020 &bull; Mert Karasakal</span>
+    </div>
+</footer>
+@*<footer class="blog-footer border-top footer text-muted">
+    <p>Blog template built by <a href="#">Mert Karasakal</a>.</p>
+
+      
+    
+</footer>*@
+
+@*<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@RenderSection("Scripts", required: false)*@
+
+
+</body>
+</html>

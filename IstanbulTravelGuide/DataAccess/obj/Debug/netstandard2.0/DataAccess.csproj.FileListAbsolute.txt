@@ -1,0 +1,14 @@
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\bin\Debug\netstandard2.0\Core.dll
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

@@ -1,0 +1,10 @@
+﻿@model CategoryListViewModel
+
+
+  @foreach (var category in Model.Categories)
+            {
+               
+                <a href="/post/index?categoryId=@category.Id" class="p-2 text-muted" >@category.Name</a>
+
+
+            }

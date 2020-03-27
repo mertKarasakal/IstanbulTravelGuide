@@ -1,0 +1,12 @@
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\Entities\bin\Debug\netstandard2.0\Core.dll
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\Entities\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\Entities\obj\Debug\netstandard2.0\Entities.csprojAssemblyReference.cache
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Users\hmkrs\source\repos\IstanbulTravelGuide\Entities\obj\Debug\netstandard2.0\Entities.pdb
